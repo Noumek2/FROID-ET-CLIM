@@ -6,6 +6,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+let lastScroll = 0;
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+    const currentScroll = window.scrollY;
+
+    if (currentScroll > lastScroll && currentScroll > 80) {
+        navbar.classList.add("hide");
+    } else {
+        navbar.classList.remove("hide");
+    }
+    lastScroll = currentScroll;
+});
+
 // Magic cursor ring
 const follower = document.getElementById('cursor-follower');
 
