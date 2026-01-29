@@ -1,31 +1,43 @@
 body { font-family: 'Roboto', sans-serif;
      background: #f0f8ff;
-      color: #333; }
+      color: #333;
+     }
 
- h1, h2, h3, h5 { font-family: 'Montserrat', sans-serif;
-     font-weight: 700; }
-        .navbar { background: white !important; border-bottom: 5px solid orange; box-shadow: 0 4px 15px rgba(255,165,0,0.2);
-        transition: transform 0.35s ease; }
-        .navbar.hide {
+ h1, h2, h3, h5 { font-family: 'Montserrat', sans-serif; font-weight: 700; }
+
+.navbar { background: white !important;
+          border-bottom: 5px solid rgb(176, 124, 29);
+          box-shadow: 0 4px 15px rgba(255,165,0,0.2);
+          transition: transform 0.35s ease;
+         }
+.navbar.hide {
             transform: translateY(-100%);
         }
-        .navbar .nav-link { color: #0066cc !important; font-weight: 600; font-size: 1.1rem; }
-        .navbar .nav-link:hover { color: orange !important; }
-        .hero { 
-            background-image: url("../Assets/1.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh; display: flex; align-items: center; color: white; text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+.navbar .nav-link { color: #043769 !important; font-weight: 600; font-size: 1.1rem; }
+
+.navbar .nav-link:hover { color: rgb(176, 124, 29) !important; }
+
+.hero { 
+         background-image: url("../Assets/1.jpg");
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat;
+         height: 100vh; 
+         display: flex; 
+         align-items: center; 
+         color: white; 
+         text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
         }
 
-        .hero h1 { font-size: 3.5rem; }
-        .carousel-section { padding: 80px 0; background: linear-gradient(to bottom, #e6f7ff, #fff0e6); }
-        .section { padding: 100px 0; }
-        .bg-light-custom { background: linear-gradient(135deg, #e6f7ff 0%, #fff5e6 100%); }
-        .carousel-inner .carousel-item img {
+.hero h1 { font-size: 3.5rem; }
+.carousel-section { padding: 80px 0; 
+                    background: linear-gradient(to bottom, #e6f7ff, #fff0e6);
+                 }
+.section { padding: 100px 0; }
+.bg-light-custom { background: linear-gradient(135deg, #e6f7ff 0%, #fff5e6 100%); }
+.carousel-inner .carousel-item img {
             width: 100%;
-            height: 500px;          /* ← change this value to what looks good on your site */
+            height: 500px;          
             object-fit: cover;      
             object-position: center;
 }
@@ -43,7 +55,7 @@ body { font-family: 'Roboto', sans-serif;
         .btn-orange:hover { background: #ff8c00; }
         footer { background: linear-gradient(to right, #0066cc, #ff8c00); color: white; padding: 50px 0; }
 
-        /* Fantasy cursor - orange border ring → blue on click */
+        
         #cursor-follower {
             position: fixed;
             width: 50px;
